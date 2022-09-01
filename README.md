@@ -1,7 +1,7 @@
 # Welcome-Offer-3
 
 1. Install [Android Studio](url)
-2. Edit MainActivity.java  in the src/main/java/com/launchdarkly/hello_android directory and set the value of MOBILE_KEY to your LaunchDarkly mobile key. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, set FLAG_KEY to the flag 
+2. Edit MainActivity.java  in the src/main/java/com/launchdarkly/hello_android directory and set the value of MOBILE_KEY to your LaunchDarkly mobile key. Your mobile key will start with "mob-" and should follow an 8-4-4-4-12 alphanumeric structure. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, set FLAG_KEY to the flag 
 
   key..mobileKey("123456abcdef")
 
