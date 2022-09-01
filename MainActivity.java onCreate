@@ -1,0 +1,19 @@
+// Initialize the LDClient object
+LDConfig ldConfig = new LDConfig.Builder()
+.mobileKey("mob-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx")
+.build();
+
+// Create a LDUser object
+LDUser user = new LDUser.Builder("example-user-key")
+.email("fake@example.com")
+.build();
+
+// Create a new LDClient instance with your environment-specific mobile SDK key
+LDClient client = LDClient.init(getApplication(), ldConfig, user, 5);
+
+// Call boolVariation() to get the flag value for our user
+if (client.boolVariation("welcome-offer-3", false)) {
+  Log.i(TAG, "Showing feature");
+} else {
+  Log.i(TAG, "Not Showing feature");
+}
